@@ -1,0 +1,1 @@
+package com.example.myapplication.ui;public class product {    public String title , product ,imageurl;    public int image;    public float star;}

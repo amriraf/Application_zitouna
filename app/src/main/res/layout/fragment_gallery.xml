@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gallery_fragement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<androidx.viewpager.widget.ViewPager
+
+        android:id="@+id/viewpager_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:layout_centerInParent="true"
+        android:fitsSystemWindows="true"
+        android:overScrollMode="never"
+        android:clipToPadding="false">-->
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <!--android:layout_above="@+id/BottomNavigationView"-->
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/NestedScrollBarStyle">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageButton
+                    android:id="@+id/simpleImageButton"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:onClick="buttonClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginEnd="9dp"
+                    android:background="@drawable/circle_shape_drawable"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/tam1"
+                    android:padding="10dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageButton
+                    android:id="@+id/imageButtonmouncieb"
+                    android:background="@drawable/circle_shape_drawable"
+                    android:layout_gravity="center"
+                    android:onClick="buttonClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/mouniceb1"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonimtiez"
+                    android:background="@drawable/circle_shape_drawable"
+                    android:layout_gravity="center"
+                    android:onClick="buttonClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/imtiez1"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!-- <me.relex.circleindicator.CircleIndicator
+         android:id="@+id/indicator"
+         android:layout_width="match_parent"
+         android:layout_height="48dp"
+         />
+  </androidx.viewpager.widget.ViewPager>-->
+
+
+
+
+
+
+    <!-- <com.google.android.material.bottomnavigation.BottomNavigationView
+          android:id="@+id/BottomNavigationView"
+          app:menu="@menu/bottom_navigation"
+          android:background="@color/BottomNavigationView"
+          app:itemIconTint="@color/login_bk_color"
+          app:itemIconSize="20dp"
+          app:itemTextColor="@color/login_bk_color"
+          android:layout_width="match_parent"
+          android:layout_height="44dp"
+          android:layout_alignParentBottom="true"
+          app:labelVisibilityMode="labeled" />-->
+</RelativeLayout>

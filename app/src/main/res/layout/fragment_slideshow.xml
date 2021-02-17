@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bk_color"
+    android:id="@+id/slide_fragment"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/NestedScrollBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    style="@style/viewParent.headerText.NoMode"
+                    android:src="@drawable/image"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/taka1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                style="@style/viewParent"
+                android:text="Élu service client de l'année 2020 "
+                android:textColor="#E53935"
+                android:textSize="@dimen/newsMoreTextSize"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"/>
+
+            <!--<TextView
+                style="@style/parent"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/themeColor"
+                android:textSize="17sp"
+                android:text="New user? Register Now"
+                android:layout_marginTop="@dimen/loginViewsMargin" />-->
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                style="@style/parent"
+                android:textStyle="bold"
+                android:textColor="@color/BottomNavigationView"
+                android:textSize="17sp"
+                android:text="L'application mobile Zitouna Takaful a été conçue pour proposer plusieurs fonctionnalités: "
+                android:layout_marginTop="40dp" />
+
+           <!-- <TextView
+                style="@style/parent"
+                android:textStyle="bold"
+                android:textColor="@color/BottomNavigationView"
+                android:textSize="17sp"
+                android:text="•"
+                 />-->
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+            <TableRow>
+                <com.example.myapplication.customviews.ZitounaTextView
+                    android:textColor="#009688"
+                    android:layout_column="1"
+                    android:text="• "
+                    android:textSize="17sp">
+                </com.example.myapplication.customviews.ZitounaTextView>
+                <com.example.myapplication.customviews.ZitounaTextView
+                    android:layout_column="2"
+                    android:layout_width="wrap_content"
+                    android:text="Simuler la tarification des produits de prévoyance et épargne relatifs à la branche Takaful Family:
+                    \n - Takaful Tamouil
+                    \n - Takaful Mounacib
+                    \n - Takaful Imtiez et Imtiez+">
+                </com.example.myapplication.customviews.ZitounaTextView>
+
+            </TableRow>
+            </TableLayout>
+
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <TableRow>
+                    <com.example.myapplication.customviews.ZitounaTextView
+                        android:textColor="#009688"
+                        android:layout_column="1"
+                        android:text="• "
+                        android:textSize="17sp">
+                    </com.example.myapplication.customviews.ZitounaTextView>
+                    <com.example.myapplication.customviews.ZitounaTextView
+                        android:layout_column="2"
+                        android:layout_width="wrap_content"
+                        android:text="Contacter un conseiller/directeur par téléphone, sms et mail.">
+                    </com.example.myapplication.customviews.ZitounaTextView>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <TableRow>
+                    <com.example.myapplication.customviews.ZitounaTextView
+                        android:textColor="#009688"
+                        android:layout_column="1"
+                        android:text="• "
+                        android:textSize="17sp">
+                    </com.example.myapplication.customviews.ZitounaTextView>
+                    <com.example.myapplication.customviews.ZitounaTextView
+                        android:layout_column="2"
+                        android:layout_width="wrap_content"
+                        android:text="Effectuer une nouvelle tâche (pour les agents).">
+                    </com.example.myapplication.customviews.ZitounaTextView>
+                </TableRow>
+            </TableLayout>
+
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <TableRow>
+                    <com.example.myapplication.customviews.ZitounaTextView
+                        android:textColor="#009688"
+                        android:layout_column="1"
+                        android:text="• "
+                        android:textSize="17sp">
+                    </com.example.myapplication.customviews.ZitounaTextView>
+                    <com.example.myapplication.customviews.ZitounaTextView
+                        android:layout_column="2"
+                        android:layout_width="wrap_content"
+                        android:text="Consultation de l’état d’avancement des tâches (pour les agents).">
+                    </com.example.myapplication.customviews.ZitounaTextView>
+                </TableRow>
+            </TableLayout>
+
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+                <TableRow>
+                    <com.example.myapplication.customviews.ZitounaTextView
+                        android:textColor="#009688"
+                        android:layout_column="1"
+                        android:text="• "
+                        android:textSize="17sp">
+                    </com.example.myapplication.customviews.ZitounaTextView>
+                    <com.example.myapplication.customviews.ZitounaTextView
+                        android:layout_column="2"
+                        android:layout_width="wrap_content"
+                        android:text="Accéder aux pages Facebook et LinkedIn de la compagnie.">
+                    </com.example.myapplication.customviews.ZitounaTextView>
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="12"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark1"
+                    android:layout_weight="3"/>
+
+                <TextView
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visitez-nous sur"
+                    android:layout_weight="6"
+                    android:textSize="12sp"
+                    android:textAlignment="center"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark1"
+                    android:layout_weight="3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:id="@+id/youtube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/youtube_1" />
+                <ImageView
+                    android:id="@+id/slideshare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/slideshare"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+   <!-- <View
+
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/about_app"/>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_image"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="30dp" />-->
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

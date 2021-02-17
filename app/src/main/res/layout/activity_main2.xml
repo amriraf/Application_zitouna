@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Main2Activity"
+    tools:context=".Main2Activity">
+    <include layout="@layout/toolbar"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/NestedScrollBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Takaful Tamouil \n Assurance Financement"
+                android:padding="15dp"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/vert_blue"/>
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Vous souhaitez financer un projet qui vous tient à coeur, l'organisme prêteur vous demande nécessairement une assurance pour garantir le remboursement du prêt en cas d'aléas de la vie."
+                android:padding="15dp"
+                android:textSize="14dp"
+                android:textColor="@color/home1"/>
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_height="match_parent"
+                android:text="Le Contrat d'Assurance Crédit TAKAFUL TAMOUIL de ZITOUNA TAKAFUL vous assure une couverture conforme aux principes de la finance islamique pour le remboursement du capital restant à votre charge en cas de décès ou d’invalidité."
+                android:textSize="14dp"
+                android:textColor="@android:color/black"/>
+
+           <!-- <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField"
+                app:boxBackgroundColor="@color/TextInputLayout"
+                android:background="@color/TextInputLayout"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="rr"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/b1"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/capital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Capital(En Dinars)"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/b2"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/date_naiss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date de naissance"
+                    android:editable="false"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/b3"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/effet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date d'effet"
+                    android:focusableInTouchMode="false"
+                     />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/b4"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dernier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date d'échéance"
+                    android:focusableInTouchMode="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/b5"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/franchise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Délai de grâce (en mois)"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_gravity="center"
+                android:layout_width="180dp"
+                app:icon="@drawable/caddie"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_simuler"
+                android:background="@drawable/button_simuler"
+                android:text="Simuler"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

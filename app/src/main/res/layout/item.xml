@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="28dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+            <ImageView
+                android:id="@+id/product"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imtiez1"
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+            </ImageView>
+
+            <TextView
+
+                android:id="@+id/text_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#262626"
+                android:layout_below="@+id/product"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:text="Produit"
+                >
+            </TextView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

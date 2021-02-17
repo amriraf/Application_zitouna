@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SecondFragment"
+    android:id="@+id/SecondFragment">
+    <androidx.core.widget.NestedScrollView
+        style="@style/NestedScrollBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Le contrat de prévoyance \n « TAKAFUL IMTIEZ + »"
+                android:padding="15dp"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/vert_blue"/>
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Grâce au contrat «TAKAFUL IMTIEZ+ » , vous faites bénéficier vos enfants d'une couverture optimale avec une multitude de garanties complémentaires."
+                android:padding="15dp"
+                android:textSize="14dp"
+                android:textColor="@color/home1"/>
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Bourse en cas de décès :"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textColor="@color/color40"/>
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_height="match_parent"
+                android:text="Le contrat «TAKAFUL IMTIEZ+ » offre à vos enfants une protection financière sous forme d'une bourse mensuelle à verser en cas de décès du participant avant la fin du contrat.
+
+Cette bourse sera servie à partir de la date du décès jusqu'à une date choisie au préalable."
+
+                android:textSize="14dp"
+                android:textColor="@android:color/black"/>
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Capital d'installation à la vie universitaire :"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textColor="@color/color40"/>
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Le contrat «TAKAFUL IMTIEZ+ » , assure à vos enfants un capital supplémentaire leur permettant de faire face aux dépenses d'installation à la vie universitaire (Logement, fournitures scolaires, dépenses des études à l'étranger, ect... ) et ce quoi qu'il arrive."
+                android:padding="15dp"
+                android:textSize="14dp"
+                android:textColor="@android:color/black"/>
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Capital d'installation à la vie professionnelle :"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textColor="@color/color40"/>
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cette couverture apporte à vos enfants un soutien financier leur permettant de bien entamer leur vie professionnelle par le versement d'un capital supplémentaire qui servira au financement des projets personnels, des cycles de formations...et ce quoi qu'il arrive."
+                android:padding="15dp"
+                android:textSize="14dp"
+                android:textColor="@android:color/black"/>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c1"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Date_de_naiss_participant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date de naiss ( participant)"
+                    android:editable="false"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c2"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Date_de_naiss_béneficaire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date de naiss (béneficaire)"
+                    android:focusableInTouchMode="false"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c3"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Date_effet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date d'effet"
+                    android:focusableInTouchMode="false"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c4"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Date_echance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date d'échéance"
+                    android:focusableInTouchMode="false"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+         <!--   <com.google.android.material.textfield.TextInputLayout
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Durée_contrat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Durée du contrat"
+                    android:editable="false"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/c5"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Durée_service_bourse"
+                    android:editable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Durée service de la bourse"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c6"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Bourse_objectif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bourse objectif"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c7"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/capital_universitaire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Capital universitaire"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c8"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/capital_professionnel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Capital professionnel"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_gravity="center"
+                android:layout_width="180dp"
+                app:icon="@drawable/caddie"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_simuler_1"
+                android:background="@drawable/button_simuler"
+                android:text="Simuler"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FirstFragment"
+    android:id="@+id/FirstFragment">
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/NestedScrollBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Le contrat épargne \n «TAKAFUL IMTIEZ»"
+                android:padding="15dp"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/vert_blue"/>
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Avec l'augmentation continue du coût des études universitaires, il devient primordial d'anticiper sur l'avenir de vos enfants pour qu'ils puissent continuer leurs cursus académique en toute quiétude.."
+                android:padding="15dp"
+                android:textSize="14dp"
+                android:textColor="@color/home1"/>
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="En choisissant le contrat «TAKAFUL IMTIEZ», vous constituez une épargne qui sera servie à vos enfants , à la fin de la période contractuelle ,sous forme d'une bourse mensuelle ou d'un capital ."
+                android:padding="15dp"
+                android:textSize="14dp"
+                android:textColor="@color/home1"/>
+
+
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Une formule souple \n et flexible :"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textColor="@color/color40"/>
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Le contrat «TAKAFUL IMTIEZ » vous offre le choix d'épargner selon votre convenance à travers des contributions dont vous définissez la périodicité. Vous pouvez à tout moment effectuer des versements exceptionnels pour consolider votre épargne à laquelle sera ajouté un pourcentage des revenus issus des investissements."
+                android:padding="15dp"
+                android:textSize="14dp"
+                android:textColor="@android:color/black"/>
+
+
+
+
+
+
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:id="@+id/text_contribution_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:text="Choix de contribution"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/background"
+                android:textSize="16dp" />
+            <com.ab.radiogroupes.RadioGroupErrorSupport
+                android:id="@+id/radio_group_contribution_1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@color/RadioGroup"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/contribution_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_end"
+                    android:text="Contribution de base" />
+
+                <RadioButton
+                    android:id="@+id/Bourse_Objectif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_end"
+                    android:text="Bourse Objectif" />
+
+            </com.ab.radiogroupes.RadioGroupErrorSupport>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/d1"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Contribution_de_base_montant_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contribution de base"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/d2"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/bourse_objectif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bourse Objectif"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Spinner
+                android:layout_marginTop="30dp"
+                android:id="@+id/spinner_croissance_1"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c1"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Date_de_naiss_participant_imtiez"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date de naiss ( participant)"
+                android:editable="false"
+                android:clickable="true"
+                android:focusableInTouchMode="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/c2"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="30dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Date_de_naiss_béneficaire_imtiez"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date de naiss (béneficaire)"
+            android:focusableInTouchMode="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+           <!-- <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Durée_contrat_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Durée du contrat"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c5"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Durée_service_bourse_1"
+                    android:editable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Durée service de la bourse"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/d11"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contribution_exp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contribution Exceptionnelle"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+          <!--  <com.google.android.material.textfield.TextInputLayout
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/effetimtiez"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date d'effet"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"/>
+            </com.google.android.material.textfield.TextInputLayout>-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c3"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/effet_imtiez"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date d'effet"
+                    android:focusableInTouchMode="false"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c30"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dernier_imtiez"
+                    android:editable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date d'échéance"
+                    android:focusableInTouchMode="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+            <Spinner
+                android:layout_marginTop="30dp"
+                android:id="@+id/spinner_11"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                />
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_gravity="center"
+                android:layout_width="180dp"
+                app:icon="@drawable/caddie"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_simuler_13"
+                android:background="@drawable/button_simuler"
+                android:text="Simuler"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

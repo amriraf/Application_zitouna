@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:id="@+id/nav_open_nav_home"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="Accueil" />
+    </group>
+
+     <group android:id="@+id/nav_open_nav_gallery"
+         android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_format_list_bulleted_white_24dp"
+            android:title="Nos Produits" />
+    </group>
+
+    <group android:id="@+id/nav_open_nav_slideshow"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_phone_iphone_white_24dp"
+            android:title="À propos Application" />
+        </group>
+
+    <group android:id="@+id/nav_open_nav_share"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_phone_white_24dp"
+            android:title="Nous Contacter" />
+    </group>
+
+    <group android:id="@+id/nav_open_parametrage"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/parametrage"
+            android:icon="@drawable/ic_settings_white_24dp"
+            android:title="Paramètres" />
+    </group>
+
+    <group android:id="@+id/nav_open_taches"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/taches"
+            android:icon="@drawable/ic_description_white_24dp"
+            android:title="Mes tâches" />
+    </group>
+
+</menu>

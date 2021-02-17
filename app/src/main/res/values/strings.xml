@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Zitouna Takaful</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Déconnexion</string>
+
+    <string name="menu_home">Accueil</string>
+    <string name="menu_gallery">Nos Produits </string>
+    <string name="menu_slideshow">À propos Application</string>
+    <string name="menu_tools">raf Takaful</string>
+    <string name="menu_share">Nous Contacter</string>
+    <string name="menu_send">Paramètres</string>
+    <string name="choice_1">Linéaire</string>
+    <string name="choice_2">Non Linéaire</string>
+    <string name="choix">Choisir la dégressivité du capital</string>
+    <string name="choose">Choisir</string>
+
+    <string name="choix_1">Choisir le responsable / service</string>
+    <string name="choice_3">Grande Branche</string>
+    <string name="choice_4">Takaful Tamouil</string>
+    <string name="choice_5">Directeur Vie</string>
+    <string name="choice_6">Directeur Technique</string>
+    <string name="choice_7">GRC</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="app_name1">ModernLogin</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
+    <string-array name="labels_array">
+        <item>Sélectionnez la croissance de contribution</item>
+        <item>0%</item>
+        <item>1%</item>
+        <item>2%</item>
+        <item>3%</item>
+        <item>4%</item>
+        <item>5%</item>
+        <item>6%</item>
+        <item>7%</item>
+        <item>8%</item>
+        <item>9%</item>
+        <item>10%</item>
+    </string-array>
+</resources>

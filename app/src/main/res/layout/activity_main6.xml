@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Main6Activity"
+    tools:context=".Main6Activity">
+    <include layout="@layout/toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/NestedScrollBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Takaful Mounacib \n Assurance complément de retraite et prévoyance"
+                android:padding="15dp"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="@color/vert_blue"/>
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Profitez d’une retraite sereine et protégez vos proches quoi qu’il arrive.."
+                android:padding="15dp"
+                android:textSize="14dp"
+                android:textColor="@color/home1"/>
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Le nouveau contrat « Takaful Mounacib » de ZITOUNA TAKAFUL est une formule d’assurance qui combine les couvertures de prévoyance et d’épargne pour maintenir votre niveau de revenu au moment de départ à la retraite ou après un coup dur de la vie.."
+                android:padding="15dp"
+                android:textSize="14dp"
+                android:textColor="@android:color/black"/>
+
+
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Nos garanties de base :"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textColor="@color/color40"/>
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="- La garantie Épargne"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="20dp"
+                android:textSize="14dp"
+                />
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:paddingLeft="20dp"
+                android:text="- La garantie décès"
+                android:textSize="14dp" />
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Nos garanties complémentaires :"
+                android:padding="15dp"
+                android:textSize="18dp"
+                android:textColor="@color/color40"/>
+
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="- Unique sur le marché : La Garantie Maladies Redoutées"
+                android:padding="5dp"
+                android:paddingLeft="20dp"
+                android:textSize="14dp"
+                />
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_height="match_parent"
+                android:text="- La garantie doublement en cas d'accident"
+                android:padding="5dp"
+                android:paddingLeft="20dp"
+                android:textSize="14dp"
+                />
+
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="- La garantie exonération"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:paddingLeft="20dp"
+                android:textSize="14dp"
+                />
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="- La garantie incapacité permanente"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="20dp"
+                android:textSize="14dp" />
+
+
+
+
+
+
+
+
+
+            <com.example.myapplication.customviews.ZitounaTextView
+                android:id="@+id/text_contribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:text="Choix de contribution"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/background"
+                android:textSize="16dp" />
+            <com.ab.radiogroupes.RadioGroupErrorSupport
+                android:id="@+id/radio_group_contribution"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@color/RadioGroup"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/contribution_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_end"
+                    android:text="Contribution de base" />
+
+                <RadioButton
+                    android:id="@+id/capital_cible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/color_end"
+                    android:text="Capital Ciblé" />
+
+            </com.ab.radiogroupes.RadioGroupErrorSupport>
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/d1"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Contribution_de_base_montant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contribution de base"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/d2"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/capital_ciblee_montant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Capital Ciblé"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Spinner
+                android:layout_marginTop="30dp"
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                />
+
+
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/d6"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/capital_deces_montant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Capital Décès"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Spinner
+                android:layout_marginTop="30dp"
+                android:id="@+id/spinner_deces"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                />
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/d11"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contribution_exp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contribution Exceptionnelle"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+       <!--     <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/capital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Capital(En Dinars)"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>-->
+
+          <!--  <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/d3"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/date_naiss_mouniceb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="Date de naissance"
+                    android:focusableInTouchMode="false"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/d4"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/effet_mouniceb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date d'effet"
+                    android:editable="false"
+                    android:focusableInTouchMode="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/d5"
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dernier_mouniceb"
+                    android:focusableInTouchMode="false"
+                    android:editable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date d'échéance" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:layout_marginTop="30dp"
+                android:id="@+id/spinner_10"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_gravity="center"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_garantie"
+                android:background="@drawable/button_simuler"
+                android:textSize="10dp"
+                android:text="Cliquer ici pour choisir les garanties complémentaires"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_gravity="center"
+                android:layout_width="180dp"
+                app:icon="@drawable/caddie"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_simuler_2"
+                android:background="@drawable/button_simuler"
+                android:text="Simuler"/>
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+
+
+
+
+
+

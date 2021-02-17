@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirstFragment_1">
+
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+      <com.example.myapplication.customviews.ZitounaTextView
+          android:id="@+id/text_phone_10"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="20dp"
+          android:padding="10dp"
+          android:text="Choisir le responsable / service"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="50dp"
+          android:textColor="@color/background"
+          android:textSize="16dp" />
+
+
+      <com.ab.radiogroupes.RadioGroupErrorSupport
+          android:id="@+id/radio_group_20"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/text_phone"
+          android:background="@color/RadioGroup"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/grande_branche_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_end"
+            android:text="@string/choice_3" />
+
+        <RadioButton
+            android:id="@+id/Takaful_tamouil_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_end"
+            android:text="@string/choice_4" />
+
+        <RadioButton
+            android:id="@+id/directeur_vie_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_end"
+            android:text="@string/choice_5" />
+
+        <RadioButton
+            android:id="@+id/directeur_technique_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_end"
+            android:text="@string/choice_6" />
+
+        <RadioButton
+            android:id="@+id/GRC10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_end"
+            android:text="@string/choice_7" />
+
+      </com.ab.radiogroupes.RadioGroupErrorSupport>
+
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/btn_appeler_10"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="80dp"
+          android:layout_marginRight="80dp"
+          app:icon="@drawable/ic_call_white_24dp"
+          android:text="Appeler" />
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_fragement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_above="@+id/BottomNavigationView_home">
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/NestedScrollBarStyle">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="6dp"
+                    android:layout_margin="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.smarteist.autoimageslider.SliderView
+                        android:id="@+id/imageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:sliderAnimationDuration="600"
+                        app:sliderAutoCycleDirection="back_and_forth"
+                        app:sliderAutoCycleEnabled="true"
+                        app:sliderIndicatorAnimationDuration="600"
+                        app:sliderIndicatorGravity="center_horizontal|bottom"
+                        app:sliderIndicatorMargin="15dp"
+                        app:sliderIndicatorOrientation="horizontal"
+                        app:sliderIndicatorPadding="3dp"
+                        app:sliderIndicatorRadius="2dp"
+                        app:sliderIndicatorSelectedColor="#5A5A5A"
+                        app:sliderIndicatorUnselectedColor="#FFF"
+                        app:sliderScrollTimeInSec="1"
+                        app:sliderStartAutoCycle="true" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <com.example.myapplication.customviews.ZitounaTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Présentation"
+                    android:padding="15dp"
+                    android:textSize="35dp"
+                    android:textColor="@color/home"/>
+
+
+                <com.example.myapplication.customviews.ZitounaTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ZITOUNA TAKAFUL est une compagnie d'assurance Islamique opérant selon le mode de fonctionnement Takaful. L'ensemble de nos produits et services sont conformes aux principes de la Finance Islamique."
+                    android:padding="15dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/home1"/>
+
+                <com.example.myapplication.customviews.ZitounaTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Crée en 2011 avec un capital de 15 000 000 dinars tunisiens, ZITOUNA TAKAFUL est une compagnie d'assurances et de réassurances proposant une large gamme de produits Takaful Général et Takaful Family destinés aux particuliers, professionnels et entreprises."
+                    android:padding="15dp"
+                    android:textSize="14dp" />
+                <com.example.myapplication.customviews.ZitounaTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="La vocation de ZITOUNA TAKAFUL est de répondre à une demande de plus en plus exprimée d'une clientèle souhaitant faire usage des pratiques de la Finance Islamique."
+                    android:padding="15dp"
+                    android:textSize="14dp" />
+                <com.example.myapplication.customviews.ZitounaTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="ZITOUNA TAKAFUL est la première compagnie d'Assurance Islamique multi-branches en Tunisie dont l'activité, les produits et les investissements sont soumis à la validation et au contrôle d'un Comité Charia'a."
+                    android:padding="15dp"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <!-- <com.google.android.material.bottomnavigation.BottomNavigationView
+
+         android:id="@+id/BottomNavigationView_home"
+         app:menu="@menu/bottom_navigation"
+         android:background="@color/BottomNavigationView"
+         app:itemIconTint="@color/login_bk_color"
+         app:itemIconSize="20dp"
+         app:itemTextColor="@color/login_bk_color"
+         android:layout_width="match_parent"
+         android:layout_height="44dp"
+         android:layout_alignParentBottom="true"
+         app:labelVisibilityMode="labeled" />-->
+
+</RelativeLayout>

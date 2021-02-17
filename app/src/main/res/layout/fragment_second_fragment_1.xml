@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondFragment_1">
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+
+
+      <com.example.myapplication.customviews.ZitounaTextView
+          android:id="@+id/text_sms_10"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="20dp"
+          android:padding="10dp"
+          android:text="Choisir le responsable / service"
+          android:layout_marginTop="50dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:textColor="@color/background"
+          android:textSize="16dp" />
+
+
+
+      <com.ab.radiogroupes.RadioGroupErrorSupport
+          android:id="@+id/radio_group_30"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/text_phone"
+          android:background="@color/RadioGroup"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/directeur_technique_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_end"
+            android:text="Directeur Technique" />
+
+        <RadioButton
+            android:id="@+id/directeur_vie_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_end"
+            android:text="Directeur Vie" />
+
+        <RadioButton
+            android:id="@+id/grande_branche_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_end"
+            android:text="Grande Branche" />
+
+        <RadioButton
+            android:id="@+id/service_apres_vente_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_end"
+            android:text="Service Après Vente" />
+
+        <RadioButton
+            android:id="@+id/Takaful_tamouil_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_end"
+            android:text="Takaful Tamouil" />
+
+        <RadioButton
+            android:id="@+id/Banque_takaful_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/color_end"
+            android:text="Banque Takaful" />
+
+
+      </com.ab.radiogroupes.RadioGroupErrorSupport>
+
+
+
+
+
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/yy"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sms_30"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Contenu" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/btn_sms_30"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="80dp"
+          android:layout_marginRight="80dp"
+          app:icon="@drawable/ic_menu_send"
+          android:text="Envoyer" />
+
+
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+</LinearLayout>
